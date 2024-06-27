@@ -1,0 +1,9 @@
+proxies:
+  - CONTAINER_NAME: "oauth-proxy-code"
+    OAUTH2_PROXY_REDIRECT_URL: "https://code.home.kazyklas.cz/oauth2/callback"
+    OAUTH2_PROXY_UPSTREAMS: "http://127.0.0.1:8888"
+    OAUTH2_PROXY_HTTP_ADDRESS: "http://127.0.0.1:8001"
+  - CONTAINER_NAME: "oauth-proxy-ollama"
+    OAUTH2_PROXY_REDIRECT_URL: "https://ollama.home.kazyklas.cz/oauth2/callback"
+    OAUTH2_PROXY_UPSTREAMS: "http://127.0.0.1:8080"
+    OAUTH2_PROXY_HTTP_ADDRESS: "http://127.0.0.1:8002"
