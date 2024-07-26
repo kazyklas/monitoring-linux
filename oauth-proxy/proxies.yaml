@@ -7,3 +7,7 @@ proxies:
     OAUTH2_PROXY_REDIRECT_URL: "https://ollama.home.kazyklas.cz/oauth2/callback"
     OAUTH2_PROXY_UPSTREAMS: "http://127.0.0.1:8080"
     OAUTH2_PROXY_HTTP_ADDRESS: "http://127.0.0.1:8002"
+- CONTAINER_NAME: "oauth-proxy-immich"
+    OAUTH2_PROXY_REDIRECT_URL: "https://immich.home.kazyklas.cz/oauth2/callback"
+    OAUTH2_PROXY_UPSTREAMS: "http://127.0.0.1:2283"
+    OAUTH2_PROXY_HTTP_ADDRESS: "http://127.0.0.1:8003"
